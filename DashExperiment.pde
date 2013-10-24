@@ -38,7 +38,7 @@ void setup() {
   noStroke();
   
   println(Serial.list());
-  String portName = Serial.list()[8];
+  String portName = Serial.list()[5];
   myPort = new Serial(this, portName, 9600);
   
   cp5 = new ControlP5(this);
